@@ -1,6 +1,6 @@
 ---
 - name: Enable Fedora Copr for gregw/i3desktop
-  command: "dnf copr enable -y gregw/i3desktop"
+  command: dnf copr enable -y gregw/i3desktop
   creates: /etc/yum.repos.d/_copr_gregw-i3desktop.repo
 
 - name: Install Windows Manager
