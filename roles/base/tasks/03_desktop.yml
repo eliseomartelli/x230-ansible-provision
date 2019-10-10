@@ -3,8 +3,35 @@
   command: "dnf copr enable -y gregw/i3desktop"
   creates: /etc/yum.repos.d/_copr_gregw-i3desktop.repo
 
-- name: Install Desktop Base
+- name: Install Windows Manager
   dnf:
     name:
       - i3-gaps
+      
+- name: Install Lock Screen 
+  dnf:
+    name:
+      - i3lock
+
+- name: Install Desktop Utilities
+  dnf:
+    name:
       - rofi
+      - xautolock
+      - feh
+      - notification-daemon
+      - scrot
+
+- name: Install Display Manager
+  dnf:
+    name:
+      - lightdm
+      - lightdm-gtk
+
+- name: Enable LightDm
+  systemd:
+    enabled: lightdm
+    name: lightdm
+
+- name: Set Graphical Runlevel
+  command: systemctl set-default graphical.target
