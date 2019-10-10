@@ -8,6 +8,7 @@
       - traceroute
       - unzip
       - htop
+      - usbutils
 
 - name: Install Terminal
   dnf:
