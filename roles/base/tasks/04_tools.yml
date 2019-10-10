@@ -8,6 +8,11 @@
       - traceroute
       - unzip
 
+- name: Install Terminal
+  dnf:
+    name:
+      - rxvt-unicode
+
 - name: Install Fedora Workstation Repositories
   dnf:
     name: 

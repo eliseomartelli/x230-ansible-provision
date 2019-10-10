@@ -7,4 +7,4 @@
     - pulseaudio-utils
     - alsa-plugins-pulseaudio
     - alsa-utils
-    - pavucontro
+    - pavucontrol
