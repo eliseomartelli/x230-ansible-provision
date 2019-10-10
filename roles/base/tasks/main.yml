@@ -1,0 +1,5 @@
+---
+- name: Hello, World!
+  copy:
+    content: helloworld
+    dest: /tmp/helloworld
