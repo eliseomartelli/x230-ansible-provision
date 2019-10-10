@@ -1,0 +1,8 @@
+---
+- name: Download Spotify lpf
+  dnf:
+    name:
+      - lpf-spotify-client
+  
+- name: Install Spotify
+  command: lpf update -y

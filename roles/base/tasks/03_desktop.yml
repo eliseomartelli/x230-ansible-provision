@@ -29,6 +29,7 @@
       - notification-daemon
       - scrot
       - network-manager-applet
+      - blueman
 
 - name: Install Display Manager
   dnf:

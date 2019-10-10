@@ -1,6 +1,8 @@
 ---
 - hosts: localhost
   become: yes
+  vars_files:
+    - variables/versions.yml
   roles:
     - {role: base, tags: ["base"]}
-    - {role: rice, tags: ["rice"]}
+    # - {role: rice, tags: ["rice"]}

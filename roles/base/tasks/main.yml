@@ -4,3 +4,4 @@
 - include: 03_desktop.yml
 - include: 04_tools.yml
 - include: 05_audio.yml
+- include: 06_other.yml
