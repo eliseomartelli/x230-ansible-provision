@@ -1,0 +1,25 @@
+---
+- name: Install XOrg Base
+  dnf:
+    name:
+      - xorg-x11-drv-evdev
+      - xorg-x11-drv-fbdev
+      - xorg-x11-drv-intel
+      - xorg-x11-drv-libinput
+      - xorg-x11-drv-vesa
+      - xorg-x11-server-Xorg
+      - xorg-x11-server-utils
+      - xorg-x11-utils
+      - xorg-x11-xauth
+      - xorg-x11-xinit
+
+- name: Install XOrg Utils
+  dnf:
+    name:
+      - xbacklight
+      - xcompmgr
+      - xrandr
+      - arandr
+      - xsel
+      - xclip
+      - xkill

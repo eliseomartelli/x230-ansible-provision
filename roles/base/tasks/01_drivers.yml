@@ -1,0 +1,12 @@
+---
+- name: Install Video Drivers
+  dnf:
+    name:
+      - mesa-dri-drivers
+      - mesa-vulkan-drivers
+
+- name: Install Wireless Drivers
+  dnf:
+    name:
+      - linux-firmware
+      - iwl6000g2a-firmware

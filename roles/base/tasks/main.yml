@@ -1,5 +1,4 @@
 ---
-- name: Hello, World!
-  copy:
-    content: helloworld
-    dest: /tmp/helloworld
+- include: 01_drivers.yml
+- include: 02_xorg.yml
+- include: 03_desktop.yml
