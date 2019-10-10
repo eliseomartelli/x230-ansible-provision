@@ -12,6 +12,14 @@
     name:
       - i3lock
 
+- name: Enable Fedora Copr for mhartgring/polybar
+  command: dnf copr enable -y mhartgring/polybar creates=/etc/yum.repos.d/_copr_mhartgring-polybar.repo warn=false
+
+- name: Install Polybar
+  dnf:
+    name:
+      - polybar
+
 - name: Install Desktop Utilities
   dnf:
     name:
