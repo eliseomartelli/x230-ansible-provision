@@ -20,6 +20,7 @@
       - feh
       - notification-daemon
       - scrot
+      - network-manager-applet
 
 - name: Install Display Manager
   dnf:
