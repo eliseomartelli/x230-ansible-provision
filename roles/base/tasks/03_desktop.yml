@@ -1,6 +1,7 @@
 ---
 - name: Enable Fedora Copr for gregw/i3desktop
   command: dnf copr enable -y gregw/i3desktop creates=/etc/yum.repos.d/_copr_gregw-i3desktop.repo
+  warn: false
 
 - name: Install Windows Manager
   dnf:
@@ -29,7 +30,7 @@
 
 - name: Enable LightDm
   systemd:
-    enabled: lightdm
+    enabled: True
     name: lightdm
 
 - name: Set Graphical Runlevel
