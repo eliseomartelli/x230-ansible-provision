@@ -1,0 +1,10 @@
+---
+- name: Install Bluetooth Stack
+  dnf:
+    name:
+      - bluez
+
+- name: Enable Bluetooth Service
+  systemd:
+    enabled: True
+    name: bluetooth

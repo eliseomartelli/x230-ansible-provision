@@ -1,0 +1,34 @@
+---
+- name: Install Desktop Utilities
+  dnf:
+    name:
+      - rofi
+      - xautolock
+      - feh
+      - notification-daemon
+      - scrot
+      - network-manager-applet
+      - blueman
+
+- name: Install Terminal
+  dnf:
+    name:
+      - rxvt-unicode
+
+- name: Install Display Manager
+  dnf:
+    name:
+      - lightdm
+      - lightdm-gtk
+
+- name: Enable LightDm
+  systemd:
+    enabled: True
+    name: lightdm
+
+- name: Install Google Noto Fonts
+  dnf:
+    name:
+      - google-noto-sans-fonts
+      - google-noto-emoji-fonts
+      - google-noto-sans-mono-fonts

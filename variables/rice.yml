@@ -1,0 +1,4 @@
+dotfiles:
+  url: https://github.com/eliseomartelli/dotfiles
+  destination: /Projects/dotfiles
+  name: eliseomartelli

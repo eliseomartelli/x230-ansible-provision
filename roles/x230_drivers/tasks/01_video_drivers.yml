@@ -1,0 +1,6 @@
+---
+- name: Install Video Drivers
+  dnf:
+    name:
+      - mesa-dri-drivers
+      - mesa-vulkan-drivers

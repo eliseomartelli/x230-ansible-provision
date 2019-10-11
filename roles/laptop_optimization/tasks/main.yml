@@ -1,0 +1,16 @@
+---
+- name: Install Laptop Optimization
+  dnf:
+    name:
+      - tlp
+      - powertop
+
+- name: Enable Tlp
+  systemd:
+    enabled: True
+    name: tlp
+
+- name: Enable Powertop Auto-Optimization
+  systemd:
+    enabled: True
+    name: powertop

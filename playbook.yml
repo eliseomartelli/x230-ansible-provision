@@ -4,5 +4,9 @@
   vars_files:
     - variables/versions.yml
   roles:
-    - {role: base, tags: ["base"]}
-    # - {role: rice, tags: ["rice"]}
+    - {role: x230_drivers, tags: ["x230_drivers"]}
+    - {role: laptop_optimization, tags: ["laptop_optimization"]}
+    - {role: cli_tools, tags: ["cli_tools"]}
+    - {role: desktop, tags: ["desktop"]}
+    - {role: desktop_apps, tags: ["desktop_apps"]}
+    - {role: rice, tags: ["rice"]}

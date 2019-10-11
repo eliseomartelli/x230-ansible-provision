@@ -18,6 +18,7 @@
     name:
       - xbacklight
       - xcompmgr
+      - xautolock
       - xrandr
       - arandr
       - xsel

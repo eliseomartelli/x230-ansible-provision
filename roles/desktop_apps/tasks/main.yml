@@ -1,23 +1,8 @@
-- name: Install CLI Tools
+---
+- name: Install Pulse Audio Volume Control
   dnf:
     name:
-      - bash-completion
-      - git
-      - neovim
-      - whois
-      - traceroute
-      - unzip
-      - htop
-      - usbutils
-      - tlp
-      - cava
-      - ranger
-      - powertop
-
-- name: Install Terminal
-  dnf:
-    name:
-      - rxvt-unicode
+    - pavucontrol
 
 - name: Install Fedora Workstation Repositories
   dnf:
@@ -43,13 +28,6 @@
     name:
       - code
 
-- name: Install Google Noto Fonts
-  dnf:
-    name:
-      - google-noto-sans-fonts
-      - google-noto-emoji-fonts
-      - google-noto-sans-mono-fonts
-
 - name: Install the rpmfusion repo packages
   dnf:
     name:
@@ -60,3 +38,11 @@
   dnf:
     name:
       - telegram-desktop
+
+- name: Download Spotify lpf
+  dnf:
+    name:
+      - lpf-spotify-client
+  
+- name: Install Spotify
+  command: lpf update -y

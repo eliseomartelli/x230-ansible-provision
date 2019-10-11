@@ -1,0 +1,7 @@
+---
+- !include 01_desktop_xorg.yml
+- !include 02_desktop_wm.yml
+- !include 03_desktop_utils.yml
+
+- name: Set Graphical Runlevel
+  command: systemctl set-default graphical.target

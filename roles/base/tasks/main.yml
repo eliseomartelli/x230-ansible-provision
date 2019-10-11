@@ -1,7 +1,0 @@
----
-- include: 01_drivers.yml
-- include: 02_xorg.yml
-- include: 03_desktop.yml
-- include: 04_tools.yml
-- include: 05_audio.yml
-- include: 06_other.yml

@@ -5,12 +5,12 @@
       - rcm
 
 - name: Clone Dotfiles
-  git: repo={{ dotfiles.url }} dest=/home/{{ user.name }}/{{ dotfiles.destination }} accept_hostkey=yes update=no
+  git: repo={{ dotfiles.url }} dest=/home/{{ dotfiles.name }}/{{ dotfiles.destination }} accept_hostkey=yes update=no
   become: yes
-  become_user: "{{ user.name }}"
+  become_user: "{{ dotfiles.name }}"
 
 - name: Install Dotfiles
-  command: rcup -d /home/{{ user.name }}/{{ dotfiles.destination }}
+  command: rcup -d /home/{{ dotfiles.name }}/{{ dotfiles.destination }}
   when: dotfiles is defined
   become: yes
-  become_user: "{{ user.name }}"
+  become_user: "{{ dotfiles.name }}"

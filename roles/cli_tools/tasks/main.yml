@@ -1,0 +1,14 @@
+---
+- name: Install CLI Tools
+  dnf:
+    name:
+      - bash-completion
+      - git
+      - neovim
+      - whois
+      - traceroute
+      - unzip
+      - htop
+      - usbutils
+      - cava
+      - ranger

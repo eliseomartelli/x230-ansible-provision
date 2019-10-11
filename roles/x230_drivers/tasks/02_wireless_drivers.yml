@@ -1,0 +1,15 @@
+---
+- name: Install Wireless Drivers
+  dnf:
+    name:
+      - linux-firmware
+      - iwl6000g2a-firmware
+
+- name: Install Wireless Utils
+  dnf:
+    name:
+      - wpa_supplicant
+      - iw
+      - NetworkManager-wifi
+      - wireless-tools
+      - crda
