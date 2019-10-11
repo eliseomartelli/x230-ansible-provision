@@ -12,6 +12,7 @@
       - tlp
       - cava
       - ranger
+      - powertop
 
 - name: Install Terminal
   dnf:
