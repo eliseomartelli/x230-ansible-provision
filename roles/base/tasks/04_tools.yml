@@ -10,6 +10,8 @@
       - htop
       - usbutils
       - tlp
+      - cava
+      - ranger
 
 - name: Install Terminal
   dnf:
@@ -53,3 +55,7 @@
       - http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-{{ fedora_current }}.noarch.rpm
       - http://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-{{ fedora_current }}.noarch.rpm
 
+- name: Install Telegram Desktop
+  dnf:
+    name:
+      - telegram-desktop
