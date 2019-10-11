@@ -3,6 +3,7 @@
   become: yes
   vars_files:
     - variables/versions.yml
+    - variables/rice.yml
   roles:
     - {role: x230_drivers, tags: ["x230_drivers"]}
     - {role: laptop_optimization, tags: ["laptop_optimization"]}
