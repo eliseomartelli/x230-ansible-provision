@@ -43,3 +43,8 @@
   dnf:
     name:
       - lpf-spotify-client
+
+- name: Install mupdf
+  dnf:
+    name:
+      - mupdf
