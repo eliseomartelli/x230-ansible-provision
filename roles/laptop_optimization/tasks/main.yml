@@ -4,6 +4,7 @@
     name:
       - tlp
       - powertop
+      - acpi
 
 - name: Enable Tlp
   systemd:
