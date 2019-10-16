@@ -11,3 +11,4 @@
     - {role: desktop, tags: ["desktop"]}
     - {role: desktop_apps, tags: ["desktop_apps"]}
     - {role: rice, tags: ["rice"]}
+    - {role: school, tags: ["school"]}
