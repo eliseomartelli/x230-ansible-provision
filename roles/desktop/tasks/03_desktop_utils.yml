@@ -20,7 +20,7 @@
     name:
       - lightdm
       - lightdm-gtk
-      - light-lock
+      - light-locker
 
 - name: Enable LightDm
   systemd:
