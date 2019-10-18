@@ -37,3 +37,8 @@
   dnf:
     name:
       - mupdf
+
+- name: Install fuse-exfat
+  dnf:
+    name:
+      - fuse-exfat
