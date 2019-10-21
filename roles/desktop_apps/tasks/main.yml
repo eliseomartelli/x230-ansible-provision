@@ -28,6 +28,11 @@
     name:
       - telegram-desktop
 
+- name: Install Steam
+  dnf:
+    name:
+      - steam
+
 - name: Download Spotify lpf
   dnf:
     name:
