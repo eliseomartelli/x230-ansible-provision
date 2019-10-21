@@ -1,0 +1,9 @@
+- name: Install Vagrant
+  dnf:
+    name:
+      - vagrant
+
+- name: Install Podman
+  dnf:
+    name:
+      - podman
