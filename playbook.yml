@@ -13,3 +13,4 @@
     - {role: rice, tags: ["rice"]}
     - {role: school, tags: ["school"]}
     - {role: container_and_virt, tags: ["container_and_virt"]}
+    - {role: android_tools, tags: ["android_tools"]}

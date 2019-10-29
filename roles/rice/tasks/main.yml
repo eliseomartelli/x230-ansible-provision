@@ -15,10 +15,12 @@
   become: yes
   become_user: "{{ dotfiles.name }}"
 
-# - name: Set user groups
-#   user:
-#     name: {{ dotfiles.name }}
-#     groups:
-#       - wheel
-#       - video
-#       - pkg-build
+- name: Set user groups
+  user:
+    name: "{{ dotfiles.name }}"
+    groups:
+      - wheel
+      - video
+      - pkg-build
+      - libvirt
+      - libvirt-qemu

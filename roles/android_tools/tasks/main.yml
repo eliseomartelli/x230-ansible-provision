@@ -1,0 +1,5 @@
+---
+- name: Install Android Platform Tools
+  dnf:
+    name:
+      - android-tools
