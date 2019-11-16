@@ -2,3 +2,4 @@
   dnf:
     name:
       - java-latest-openjdk
+      - java-devel

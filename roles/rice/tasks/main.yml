@@ -22,5 +22,3 @@
       - wheel
       - video
       - pkg-build
-      - libvirt
-      - libvirt-qemu
