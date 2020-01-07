@@ -34,3 +34,8 @@
       - google-noto-emoji-fonts
       - google-noto-emoji-color-fonts
       - google-noto-sans-mono-fonts
+
+- name: Install Redshift
+  dnf:
+    name:
+      - redshift
