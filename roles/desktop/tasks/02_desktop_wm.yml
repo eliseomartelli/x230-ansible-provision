@@ -1,14 +1,11 @@
 ---
-- name: Enable Fedora Copr for gregw/i3desktop
-  command: dnf copr enable -y gregw/i3desktop creates=/etc/yum.repos.d/_copr_gregw-i3desktop.repo warn=false
+- name: Enable Fedora Copr for bpremo/i3desktop
+  command: dnf copr enable -y bpremo/i3desktop creates=/etc/yum.repos.d/_copr_gregw-i3desktop.repo warn=false
 
 - name: Install Windows Manager
   dnf:
     name:
       - i3-gaps
-
-- name: Enable Fedora Copr for mhartgring/polybar
-  command: dnf copr enable -y mhartgring/polybar creates=/etc/yum.repos.d/_copr_mhartgring-polybar.repo warn=false
 
 - name: Install Polybar
   dnf:
