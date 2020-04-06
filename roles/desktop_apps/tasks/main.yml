@@ -10,7 +10,7 @@
       - fedora-workstation-repositories
 
 - name: Enable Google Chrome
-  command: dnf config-manager --set-enabled google-chrome
+  command: dnf config-manager --set-enabled google-chrome warn=false
 
 - name: Install Google Chrome
   dnf:
