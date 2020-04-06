@@ -6,14 +6,14 @@
       - xautolock
       - feh
       - notification-daemon
-      - scrot
+      - maim
       - network-manager-applet
       - blueman
 
 - name: Install Terminal
   dnf:
     name:
-      - rxvt-unicode
+      - kitty
 
 - name: Install Display Manager
   dnf:
