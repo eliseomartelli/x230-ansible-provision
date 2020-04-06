@@ -7,3 +7,8 @@
   dnf:
     name:
       - podman
+
+- name: Install Virt Manager
+  dnf:
+    name:
+      - virt-manager
