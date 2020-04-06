@@ -1,6 +1,6 @@
 ---
 - name: Enable Fedora Copr for bpremo/i3desktop
-  command: dnf copr enable -y bpremo/i3desktop creates=/etc/yum.repos.d/_copr_gregw-i3desktop.repo warn=false
+  command: dnf copr enable -y gregw/i3desktop creates=/etc/yum.repos.d/_copr_gregw-i3desktop.repo warn=false
 
 - name: Install Windows Manager
   dnf:
