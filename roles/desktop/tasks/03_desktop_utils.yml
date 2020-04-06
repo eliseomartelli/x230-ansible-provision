@@ -9,6 +9,7 @@
       - maim
       - network-manager-applet
       - blueman
+      - picom
 
 - name: Install Terminal
   dnf:
