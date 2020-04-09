@@ -15,3 +15,5 @@
       - playerctl
       - grive2
       - nmap
+      - iperf
+      - speedtest-cli
