@@ -17,3 +17,4 @@
       - nmap
       - iperf
       - speedtest-cli
+      - cifs-utils
