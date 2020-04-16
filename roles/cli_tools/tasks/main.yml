@@ -18,3 +18,4 @@
       - iperf
       - speedtest-cli
       - cifs-utils
+      - iftop
