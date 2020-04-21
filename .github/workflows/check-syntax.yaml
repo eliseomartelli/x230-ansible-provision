@@ -17,4 +17,4 @@ jobs:
           ansible-galaxy install git+https://github.com/c0sco/ansible-modules-bitwarden
       - name: test syntax
         run: |
-          ansible-playbook playbook.yaml --syntax-check
+          ansible-playbook playbook.yml --syntax-check
