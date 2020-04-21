@@ -3,7 +3,7 @@ on:
   - push
 
 jobs:
-  build:
+  syntax:
     name: Check Syntax
     runs-on: ubuntu-latest
     steps:
@@ -14,7 +14,9 @@ jobs:
           pip3 install homeassistant
           pip3 install ansible
           pip3 install ansible-lint
-          ansible-galaxy install git+https://github.com/c0sco/ansible-modules-bitwarden
       - name: test syntax
         run: |
           ansible-playbook playbook.yml --syntax-check
+      - name: linting
+        run: |
+          ansible-lint playbook.yml
