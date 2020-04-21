@@ -4,7 +4,7 @@
     name:
       - rcm
 
-- name: Clone Dotfiles
+- name: Clone Dotfiles # noqa 401
   git: repo={{ dotfiles.url }} dest=/home/{{ dotfiles.name }}/{{ dotfiles.destination }} accept_hostkey=yes update=no
   become: yes
   become_user: "{{ dotfiles.name }}"

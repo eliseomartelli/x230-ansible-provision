@@ -6,10 +6,10 @@
 
 - name: Install Fedora Workstation Repositories
   dnf:
-    name: 
+    name:
       - fedora-workstation-repositories
 
-- name: Enable Google Chrome
+- name: Enable Google Chrome # noqa 301
   command: dnf config-manager --set-enabled google-chrome warn=false
 
 - name: Install Google Chrome

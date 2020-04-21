@@ -5,7 +5,7 @@
       - mesa-dri-drivers
       - mesa-vulkan-drivers
 
-- name: Write Backlight Config File 
+- name: Write Backlight Config File
   copy:
     src: ./support_files/20-intel.conf
     dest: /etc/X11/xorg.conf.d/20-intel.conf

@@ -20,3 +20,4 @@
       - cifs-utils
       - iftop
       - bind-utils
+      - wavemon
