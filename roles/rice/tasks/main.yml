@@ -4,15 +4,19 @@
     name:
       - rcm
 
-- name: Clone Dotfiles # noqa 401
-  git: repo={{ dotfiles.url }} dest=/home/{{ dotfiles.name }}/{{ dotfiles.destination }} accept_hostkey=yes update=no
-  become: yes
+- name: Clone Dotfiles   # noqa 401
+  git:
+    repo: "{{ dotfiles.url }}"
+    dest: /home/{{ dotfiles.name }}/{{ dotfiles.destination }}
+    accept_hostkey: true
+    update: false
+  become: true
   become_user: "{{ dotfiles.name }}"
 
 - name: Install Dotfiles
   command: rcup -d /home/{{ dotfiles.name }}/{{ dotfiles.destination }}
   when: dotfiles is defined
-  become: yes
+  become: true
   become_user: "{{ dotfiles.name }}"
 
 - name: Set user groups

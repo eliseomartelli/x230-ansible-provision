@@ -6,5 +6,5 @@
 
 - name: Enable Bluetooth Service
   systemd:
-    enabled: True
+    enabled: true
     name: bluetooth

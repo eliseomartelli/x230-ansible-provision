@@ -3,6 +3,6 @@
 - include: 02_desktop_wm.yml
 - include: 03_desktop_utils.yml
 
-- name: Set Graphical Runlevel # noqa 303
+- name: Set Graphical Runlevel  # noqa 303
   command: systemctl set-default graphical.target
-  when: runlevel.stdout != "graphical.target"
+  when: runlevel.stdout != "graphical.target

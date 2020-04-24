@@ -2,9 +2,9 @@
 - name: Install Pulse Audio
   dnf:
     name:
-    - pulseaudio
-    - pulseaudio-libs
-    - pulseaudio-utils
-    - alsa-plugins-pulseaudio
-    - alsa-utils
-    - pulseaudio-module-bluetooth
+      - pulseaudio
+      - pulseaudio-libs
+      - pulseaudio-utils
+      - alsa-plugins-pulseaudio
+      - alsa-utils
+      - pulseaudio-module-bluetooth

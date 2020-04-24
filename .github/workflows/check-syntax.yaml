@@ -1,5 +1,6 @@
+---
 name: Check Syntax
-on:
+on:  # noqa 401
   - push
 
 jobs:
