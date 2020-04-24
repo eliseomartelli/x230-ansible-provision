@@ -5,4 +5,3 @@
 
 - name: Set Graphical Runlevel  # noqa 303
   command: systemctl set-default graphical.target
-  when: runlevel.stdout != "graphical.target
