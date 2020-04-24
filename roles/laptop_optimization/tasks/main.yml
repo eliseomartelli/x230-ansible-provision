@@ -8,10 +8,10 @@
 
 - name: Enable Tlp
   systemd:
-    enabled: True
+    enabled: true
     name: tlp
 
 - name: Enable Powertop Auto-Optimization
   systemd:
-    enabled: True
+    enabled: true
     name: powertop

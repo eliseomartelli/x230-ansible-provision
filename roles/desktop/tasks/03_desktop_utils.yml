@@ -25,7 +25,7 @@
 
 - name: Enable LightDm
   systemd:
-    enabled: True
+    enabled: true
     name: lightdm
 
 - name: Install Google Noto Fonts
