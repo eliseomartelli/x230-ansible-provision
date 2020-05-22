@@ -21,3 +21,4 @@
       - iftop
       - bind-utils
       - wavemon
+      - pre-commit
