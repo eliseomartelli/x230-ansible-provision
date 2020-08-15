@@ -49,3 +49,8 @@
   dnf:
     name:
       - fuse-exfat
+
+- name: Install Pipewire
+  dnf:
+    name:
+      - pipewire
