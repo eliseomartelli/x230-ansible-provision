@@ -54,3 +54,8 @@
   dnf:
     name:
       - pipewire
+
+- name: Install speedcrunch
+  dnf:
+    name:
+      - speedcrunch 
