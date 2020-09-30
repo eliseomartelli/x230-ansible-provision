@@ -49,3 +49,13 @@
   dnf:
     name:
       - fuse-exfat
+
+- name: Install Pipewire
+  dnf:
+    name:
+      - pipewire
+
+- name: Install speedcrunch
+  dnf:
+    name:
+      - speedcrunch 
