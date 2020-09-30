@@ -23,4 +23,4 @@
       - wavemon
       - pre-commit
       - pandoc
-      -	texlive-pdftex
+      - aria2
